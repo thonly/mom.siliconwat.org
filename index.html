@@ -3,23 +3,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mom</title>
         <link rel="stylesheet" href="index.css">
+        <script src="//unpkg.com/@ungap/custom-elements/es.js"></script>
         <script src="index.js" type="module"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZWBS0074X"></script>
     </head>
-    <body>
+    <body is="tl-provider">
         <header>
-            <h1>Stock Portfolio</h1>
+            <button>Connect</button>
         </header>
-        <main>
-            <fieldset>
-                <legend>Nio</legend>
-            </fieldset>
-            <fieldset>
-                <legend>??</legend>
-            </fieldset>
-            <fieldset>
-                <legend>??</legend>
-            </fieldset>
+        <main data-account="mom">
+            <tl-account></tl-account>
+            <tl-actions></tl-actions>
+            <tl-stocks></tl-stocks>
         </main>
         <footer>
             <h6>HeartBank®</h6>
