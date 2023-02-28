@@ -1,4 +1,4 @@
-import { THON } from "https://i.thonly.org/global.mjs";
+import { THON } from "https://stocks.thonly.org/global.mjs";
 
 window.onload = async () => {
     await import(`${THON}/components/tl-account/element.mjs`);
